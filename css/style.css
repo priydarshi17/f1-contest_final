@@ -1,0 +1,278 @@
+/* CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navigation-height: 59px;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+
+#navbar::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 30px;
+}
+
+#logo img {
+    height: 50px;
+    width: 50px;
+    margin: 3px 8px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 156px;
+    height: 540px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: " ";
+    background: url('../bg1.avif') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 550px;
+    width: 100%;
+    z-index: -1;
+    opacity: .95;
+}
+
+#home h1 {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* services section */
+
+#services {
+    display: flex;
+    margin: 12px;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 0px 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e5e2e2;
+    border-radius: 28px
+}
+
+#services .box img {
+    height: 145px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/* client section */
+#client-section {
+    position: relative;
+    /* height: 300px; */
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../bg11.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#client img {
+    /* height: 120px; */
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 12px;
+}
+
+/* contact section */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: " ";
+    position: absolute;
+    background: url('../contus.jfif') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#cotact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#cotact-box input,
+#cotact-box textarea {
+    border-radius: 8px;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.1rem;
+    border: 2px solid rgb(105, 93, 93);
+}
+
+#cotact-box input:hover,
+#cotact-box textarea:hover{
+    border: 2px solid black;
+    cursor:pointer;
+}
+
+#cotact-box form {
+    /* height: 526px; */
+    width: 40%;
+}
+
+#cotact-box label {
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 3px 13px;
+}
+
+/* Utility Class*/
+.h-primary {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 3.3rem;
+    padding: 6px;
+}
+
+.h-secondary {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 4px 12px;
+    margin: 12px;
+    border: 2px solid white;
+    background: #80522f;
+    color: white;
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    border: 2px solid black;
+    color:black;
+}
+
+.center {
+    text-align: center;
+}
+
+.Abovefotter{
+    display: flex;
+    flex-direction:row;
+    text-align: left;
+    padding: 50px 20px;
+    margin: 0px 0px;
+}
+
+.fcontent{
+    margin: 30px auto;
+    padding: 30px 10px;
+}
+.nav-search{
+    position: absolute;
+    right: 102px;
+}
+
+.btn1{
+    border: 1px solid white;
+    color: black;
+    background-color: #80522f;
+    border-radius: 3px;
+}
+
+.btn1:hover{
+    border: 2px solid black;
+    color:black;
+}
